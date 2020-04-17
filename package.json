@@ -1,0 +1,8 @@
+{
+  "name": "brainfuck",
+  "version": "1.0.0",
+  "description": "An easy and expandable Brainfuck interpreter",
+  "main": "main.js",
+  "author": "Er2",
+  "license": "MIT"
+}
