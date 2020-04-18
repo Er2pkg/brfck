@@ -1,8 +1,8 @@
 {
   "name": "brfck",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An easy and expandable Brainfuck interpreter",
-  "main": "index.js",
+  "main": "compiler.js",
   "author": "Er2",
   "license": "MIT",
   "repository": {

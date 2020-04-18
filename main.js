@@ -1,7 +1,6 @@
-class Brainfuck {
+class Main {
 constructor() {
 this.memory = require('./memory')
-this.compiler = require('./compiler')
 this.langs = require('./langs/langs')
 this.output = ''
 this.input = []
@@ -19,9 +18,5 @@ for(; position.current<this.code.length; position.increment()) {
 let char = this.code.charAt(position.current), cmds = lang.cmds
 if(!cmds || (cmds && !cmds[char])) throw new Error(`Invalid operator '${char}'`)
 else cmds[char](memory, this, position, lang.chVals || {})
-}
-return this.output
-}
-execute = this.exec
-}
-module.exports = Brainfuck
+} return this.output}}
+module.exports = Main
