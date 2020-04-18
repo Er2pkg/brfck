@@ -1,13 +1,10 @@
-const bf = require('./brainfuck'),
-fs = require('./fucking'),
+const 
+brf = require('./brf'),
+fsc = require('./fsc'),
 ezs = require('./ezs')
-module.exports = {
+module.exports = [
 //DO NOT PROVIDE THIS FILE IN LIST
-brainfuck: new bf(),
-bf: new bf(),
-fucking: new fs(),
-fs: new fs(),
-fuckingscript: new fs(),
-ezscript: new ezs(),
-ezs: new ezs(),
-}
+new brf(),
+new fsc(),
+new ezs(),
+]

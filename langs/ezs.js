@@ -1,8 +1,9 @@
-const BF = require('./brainfuck')
+const BF = require('./brf')
 class EZscript extends BF {
 // (c) Er2 EZscript xD
 constructor() {
 super()
+this.names = ['ezs', 'ezscript']
 this.regex = '[^NPLMOISE]'
 this.chVals = {
 '+': 'L',

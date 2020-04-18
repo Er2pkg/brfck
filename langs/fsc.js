@@ -1,8 +1,9 @@
-const BF = require('./brainfuck')
+const BF = require('./brf')
 class FuckingScript extends BF {
 // (c) Er2 FuckingScript xD
 constructor() {
 super()
+this.names = ['fsc', 'fs', 'fscript', 'fuckingscript']
 this.regex = '[^\^\_\{\}\*>\+\-]'
 this.chVals = {
 '+': '^',

@@ -1,5 +1,6 @@
 class BrainFuck {
 constructor() {
+this.names = ['brf', 'bf', 'brainfuck']
 this.chVals = {'[':'[',']':']'}
 this.regex = '[^\+\-\[\].,<>]'
 this.cmds = {
