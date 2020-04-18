@@ -2,6 +2,19 @@
 
 An easy and expandable Brainfuck interpreter
 
+## Languages
+
+|BrainFuck|FuckingScript|EZscript|
+|:-------:|:------------:|:------:|
+|>|+|**N**ext|
+|<|-|**P**rev|
+|+|^|p**L**us|
+|-|_|**M**inus|
+|.|*|**O**utput|
+|,|>|**I**nput|
+|[|{|**S**tart|
+|]|}|**E**nd|
+
 ## Learning Brainfuck
 
 Designed by Urban Müller in 1993, Brainfuck is a Turing-complete programming language made of eight instructions, each a single character in length, and no operands:

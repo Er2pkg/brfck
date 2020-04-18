@@ -1,6 +1,7 @@
 class Brainfuck {
 constructor() {
 this.memory = require('./memory')
+this.compiler = require('./compiler')
 this.langs = require('./langs/langs')
 this.output = ''
 this.input = []
@@ -15,12 +16,12 @@ if(this.code.length == 0) throw new Error('Provide a normal code')
 let memory = new this.memory(),
 position = new this.memory(65536)
 for(; position.current<this.code.length; position.increment()) {
-let char = this.code.charAt(position.current), act = lang.cmds[char]
-if(!act) throw new Error(`Invalid operator '${char}'`)
-else act(memory, this, position)
+let char = this.code.charAt(position.current), cmds = lang.cmds
+if(!cmds || (cmds && !cmds[char])) throw new Error(`Invalid operator '${char}'`)
+else cmds[char](memory, this, position, lang.chVals || {})
 }
 return this.output
 }
 execute = this.exec
 }
-module.exports = new Brainfuck()
+module.exports = Brainfuck
