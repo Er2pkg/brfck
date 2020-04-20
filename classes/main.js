@@ -1,6 +1,5 @@
 class Main {
 constructor() {
-this.legacy = require('./mainLegacy')
 this.bf = {
 exec: (code, input = '', lang = 'brainfuck') => {
 if(!this.getLang(lang.toLowerCase())) throw new this.Error('Language is not found', {})

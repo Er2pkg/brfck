@@ -5,7 +5,7 @@ An easy and expandable Brainfuck interpreter
 ## Languages
 
 |BrainFuck|FuckingScript|EZscript|
-|:-------:|:------------:|:------:|
+|:-------:|:-------------:|:------:|
 |>|+|**N**ext|
 |<|-|**P**rev|
 |+|^|p**L**us|
