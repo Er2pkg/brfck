@@ -1,9 +1,9 @@
-class BrainFuck {
+module.exports = class BrainFuck {
 constructor() {
 this.Error = require('../classes/BFerror')
 this.names = ['brf', 'bf', 'brainfuck']
 this.chVals = {'[':'[',']':']'}
-this.regex = '[^\+\-\[\].,<>]'
+this.regex = '[^\>\<\+\-\[\]]'
 this.cmds = {
 '>': memory => memory.incrementPointer(),
 '<': memory => memory.decrementPointer(),
@@ -26,4 +26,3 @@ if (cont == true) throw new this.Error(`Unmatched loop at index ${position.list[
 ']': (a, b, pos) => {if (pos.pointer == 0) throw new this.Error(`Unmatched loop at index ${pos.current}`); else {pos.decrementPointer();pos.decrement()}}
 }
 }}
-module.exports = BrainFuck

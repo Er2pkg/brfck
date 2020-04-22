@@ -1,10 +1,14 @@
 const 
 brf = require('./brf'),
-fsc = require('./fsc'),
-ezs = require('./ezs')
+bfp = require('./bfp'),
+ezs = require('./ezs'),
+hq9 = require('./hq9'),
+rsc = require('./rsc')
 module.exports = [
 //DO NOT PROVIDE THIS FILE IN LIST
 new brf(),
-new fsc(),
+new bfp(),
 new ezs(),
+new hq9(),
+new rsc(),
 ]
