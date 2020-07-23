@@ -34,9 +34,12 @@ return res
 
 getLang = lang => this.langs.find(i => i.names.find(x => x == lang.toLowerCase()))
 
+ascii = (text = '') => text.toString().split('').map(i=>i.charCodeAt(0))
+
 version = require('../package.json').version
 memory = require('./memory')
 RLE = require('./RLE')
+LZ77 = require('./LZ77')
 Error = require('./BFerror')
 Result = require('./result')
 langs = require('../langs/langs')

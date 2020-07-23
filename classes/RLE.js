@@ -1,5 +1,5 @@
 /*
-Thanks to github's gist
+Thanks to
  https://gist.github.com/samuelfvlcastro/965ca9b9e4036eafe56c5b1d1405b754
 */
 
